@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/darkgrey">
+
+            <TextView
+                android:id="@+id/productIdTxt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@color/grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/stateId"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16sp"
+                android:background="@color/grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/stateNameTxt"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+               android:background="@color/grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/productIdTxt" />
+
+
+            <TextView
+                android:id="@+id/adminId"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="20dp"
+               android:background="@color/grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/stateNameTxt" />
+
+
+            <TextView
+                android:id="@+id/dateTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@color/grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/stateNameTxt" />
+
+
+
+            <TextView
+                android:id="@+id/productRateTxt"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+              android:background="@color/grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dateTxt" />
+
+            <TextView
+                android:id="@+id/productRate"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+               android:background="@color/grey"
+                app:layout_constraintBottom_toBottomOf="@id/productRateTxt"
+                app:layout_constraintStart_toEndOf="@id/productRateTxt"
+                app:layout_constraintTop_toTopOf="@id/productRateTxt" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/updateAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/productRate" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
